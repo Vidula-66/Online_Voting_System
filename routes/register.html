@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Online Voting System Registration</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <style>
+            #address{
+                width:36%;
+            }
+            #imagepath{
+                border:2px solid black;
+                border-radius:5px;
+                padding:10px;
+                width:32%;
+            }
+            #role{
+                border:2px solid black;
+                border-radius:5px;
+                padding:10px;
+                width:32%;
+            }
+            #role select{
+              padding:9px;
+              border-radius:4px;
+            }
+        </style>
+        <center>
+            <h1>Online Voting System</h1>
+            <hr>
+            <h3>Registration</h3>
+            <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+                <input type="text" name="name" placeholder="Enter name" required>
+                <input type="number" name="mobile" placeholder="Enter mobile" required><br><br>
+                <input type="password" name="password" placeholder="Enter password" required>
+                <input type="password" name="cpassword" placeholder="Confirm password" required><br><br>
+                <input id="address" type="text" name="address" placeholder="Address" required><br><br>
+                
+                <div id="dob">
+                    Date of Birth: <input type="date" name="dob" required>
+                </div><br>
+                <div id="voterid">
+                    Voter ID: <input type="text" name="voterid" placeholder="Enter voter ID" required>
+                </div><br>
+                
+                <div id="imagepath">
+                    Upload Image: <input type="file" name="photo" required>
+                </div><br>
+                <div id="role">
+                    Select Role:
+                    <select name="role" id="role">
+                        <option value="1">Voter</option>
+                        <option value="2">Group</option>
+                    </select>
+                </div>
+                <br>
+                <button style="padding:5px; font-size:15px; background-color:blue; color:white; border-radius:5px;">
+                    Register
+                </button><br><br>
+                Already a user? <a href="../">Login here</a>
+            </form>
+        </center>
+    </body>
+</html>

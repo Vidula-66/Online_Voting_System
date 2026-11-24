@@ -1,0 +1,29 @@
+body{
+    
+    background-color: aqua;
+}
+
+#headerSection{
+    padding:10px;
+}
+#headerSection h1{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+input{
+     padding: 5px;
+     border-radius: 2px;
+     border-width:2px;
+}
+#dropbox{
+    padding: 5px;
+    border-radius:7px;
+    border-width:2px;
+    width:19%;
+}
+#loginbtn{
+    padding: 5px;
+    border-radius:5px;
+    background-color:blue;   
+    color: aliceblue;
+}
